@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <span>
+        <h1 class="main-head">Pizza - Your Own Pizza</h1>
+      </span>
+    </nav>
+    <div class="text-pizza">Make Your Pizza Here</div>
+    <div class="pizza-plate" ondrop="drop(event)" ondragover="allowdrop(event)" ></div>
+
+    <div class="text-pizza">Please Select a pizza Base</div>
+    <div class="pizza-top-base">
+        <img ondragstart="dragstarts(event)" class="basedrag base1img pizza-base" src="./Assest/base-1.jpg" alt="base"/>
+        <img ondragstart="dragstarts(event)" class="basedrag base2img pizza-base" src="./Assest/base-2.jpg" alt="base" />
+        <img ondragstart="dragstarts(event)" class="basedrag base1img pizza-base" src="./Assest/base-3.jpg" alt="base" />
+        <img ondragstart="dragstarts(event)" class="basedrag base2img pizza-base" src="./Assest/base-4.jpg" alt="base" />
+    </div>
+
+
+    <div id="ingredient_container">
+      <h3 class="ingredients">Add the ingredients for Pizza</h3>
+
+      <div class="pizza-top-ingredient">
+        <img ondragstart="dragstarts(event)" src="./Assest/Panner-base-2.jpg" class="pizza-base-1" alt="" draggable="true">
+        <img ondragstart="dragstarts(event)" src="./Assest/Tomato-base-1.jpg" class="pizza-base-1" alt="" draggable="true">
+        <img ondragstart="dragstarts(event)" src="./Assest/onion-base-3.jpg" class="pizza-base-1" alt="" draggable="true">
+    </div>
+    <div class="cat">
+        <div class="name">Onion Pizza</div>
+        <div class="name">Panner Pizza</div>
+        <div class="name">Tamato Pizza</div>
+    </div>
+      <!-- <button onclick="submitbtn()">Send for Coking</button> -->
+    </div>
+
+    <!-- <div id="data"></div> -->
+    <script src="./script.js"></script>
+  </body>
+</html>
