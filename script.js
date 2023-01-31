@@ -47,11 +47,9 @@ let submitbtn = () => {
     h1.style.textAlign="center"
 
     let h3=document.createElement("h1")
-    h3.textContent="These are the ingredients you have selected -"
     let div=document.createElement("div")
     div.appendChild(h3)
     data.appendChild(h1)
-    data.appendChild(div);
     for (let key in frequency) {
         let p = document.createElement("h2");
         p.textContent = `${key}: ${frequency[key]}`;
